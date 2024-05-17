@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+        }
+        .relative-element{
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: #f00;
+        }
+        .absolute-element{
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            background-color: #f00;
+        }
+        .containero{
+            display: flex;
+            justify-content: center;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu a{
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+        .ellipsis-text{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="relative-element">相对定位元素</div>
+        <div class="absolute-element"绝对定位元素</div>
+    </div> -->
+    <div class="containero">
+        <nav class="menu">
+            <a href="#">首页</a>
+            <a href="#">关于我们</a>
+            <a href="#">产品</a>
+            <a href="#">联系我们</a>
+        </nav>
+    </div>
+
+    <div class="ellipsis-text">
+        thisn dahsdnadn hfa fhafhaf  f af h f af af a faehfaeh fhaefahe feaf aefnaofua fbafbabfa fa fa ff ag fgg haugegbe ugeugbeug eug ag egueg eugweu
+    </div>
+</body>
+</html>

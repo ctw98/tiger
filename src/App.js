@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';  
+// import SimpleChart from './SimpleChart';  
+// import UseState from './hooks/useState';
+// import UseEffect from './hooks/useEffect';
+import UseContext from './hooks/useContext';
+// import UseReducer from './hooks/useReducer';
+// import UseCallback from './hooks/useCallback';
+// import UseMemo from './hooks/useMemo';
+// import UseRef from './hooks/useRef';
+  
+export default function App() {  
+    return (  
+        <div>  
+            <h1>我的React应用</h1>  
+            {/* <SimpleChart />   */}
+            <h1>我的ReactHooks</h1>  
+            {/* <UseState /> */}
+            {/* <UseEffect /> */}
+            <UseContext />
+            {/* <UseReducer/> */}
+            {/* <UseCallback/> */}
+            {/* <UseMemo/> */}
+            {/* <UseRef/>  */}
+        </div>  
+    );  
 }
-
-export default App;

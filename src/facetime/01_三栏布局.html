@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .container {
+        display: flex;
+    }
+    .left,.right {
+        width: 200px;
+    }
+    .main {
+        flex: 1; /*  自动扩展剩余空间 */
+    }
+    .containerOne {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+    }
+    .containerTwo {
+        position: relative;
+    }
+    .lefto,.righto{
+        width: 200px;
+        position: absolute;
+        top: 0;
+    }
+    .lefto{
+        left: 0;
+    }
+    .righto{
+        right: 0;
+    }
+    .maino{
+        margin: 0 200px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left" style="border: 1px solid black;">Left Sidebar</div>
+        <div class="main" style="border: 1px solid black;">Main Content</div>
+        <div class="right" style="border: 1px solid black;">Right Sidebar</div>
+    </div>
+    <div class="containerOne">
+        <div class="left" style="border: 1px solid black;">Left Sidebar</div>
+        <div class="main" style="border: 1px solid black;">Main Content</div>
+        <div class="right" style="border: 1px solid black;">Right Sidebar</div>
+    </div>
+    <div class="containerTwo">
+        <div class="lefto" style="border: 1px solid black;">Left Sidebar</div>
+        <div class="maino" style="border: 1px solid black;">Main Content</div>
+        <div class="righto" style="border: 1px solid black;">Right Sidebar</div>
+    </div>
+
+    
+</body>
+</html>

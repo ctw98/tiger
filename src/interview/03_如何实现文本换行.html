@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {  
+            word-wrap: break-word; /* 或者使用 overflow-wrap: break-word; */  
+            width: 200px; /* 设置一个具体的宽度，以便看到换行效果 */  
+        }
+        .flex-container {  
+            display: flex;  
+            /* 其他Flex属性 */  
+        }  
+  
+        .flex-item {  
+            /* 这里通常不需要特别的样式来实现文本换行，除非你想限制宽度或设置特定的对齐方式 */  
+            flex: 1; /* 允许项目根据需要增长或缩小 */  
+            margin: 10px; /* 添加一些间距以区分项目 */  
+            padding: 10px; /* 添加内边距以展示文本 */  
+            border: 1px solid #ccc; /* 添加边框以便于查看 */  
+        }
+
+        .grid-container {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 创建一个响应式的网格布局 */  
+            grid-gap: 10px; /* 添加网格线之间的间距 */  
+        }  
+            
+        .grid-item {  
+            padding: 10px; /* 添加内边距以展示文本 */   
+            border: 1px solid #ccc; /* 添加边框以便于查看 */  
+        }
+    </style>
+</head>
+<body>
+    <div>
+        1./br/标签  /p/标签
+        <div class="container">第二种word-wrap: break-word</div>
+        3.不设置white-space:nowrap;而用white-space:normal
+        <br>4.设置容器的宽度</br>
+    </div>
+    <div class="grid-container">  
+        <div class="grid-item">这是一段文本，它会在需要时自动换行。</div>  
+        <div class="grid-item">另一段文本。</div>  
+      </div>
+</body>
+</html>

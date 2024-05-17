@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myAnimation{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .thin-line{
+            height: 1px;
+            background: #000;
+            transform: scaleY(0.5);
+
+        }
+        .element{
+            box-sizing: content-box;
+            width: 100px;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+        .animated-element{
+            animation-name: myAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        .button{
+            transition: background-color 0.3s ease;
+        }
+        .button:hover{
+            background-color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thin-line"></div>
+    <div class="element"></div>
+    <div id="el" class="animated-element">animated Element</div>
+    <button></button>
+
+</body>
+</html>
